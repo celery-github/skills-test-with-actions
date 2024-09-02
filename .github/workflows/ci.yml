@@ -9,9 +9,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  name: syntax practise
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v4
-    - name: Run markdown lint
-      run: echo "yaml syntax sucks"
+  build:
+    name: syntax practise
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run markdown lint
+        run: echo "yaml syntax sucks"
